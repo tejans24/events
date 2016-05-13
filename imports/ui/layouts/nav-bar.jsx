@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from 'react';
-import { browserHistory } from 'react-router';
+import { Link, browserHistory } from 'react-router'
+
 import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
 import IconButton from 'material-ui/IconButton';
 
-import { Link } from 'react-router'
-
+import AccountsUIWrapper from '../AccountsUIWrapper.jsx';
 
 /* NavBar
  *
@@ -28,11 +28,20 @@ var NavBar = React.createClass({
 
     return (
       <AppBar
-        title="Title"
-        iconClassNameRight="muidocs-icon-navigation-expand-more"
-      />
+        title="Events"
+        titleStyle={{ cursor: 'pointer' }}
+        onTitleTouchTap={ this.handleTouchTap }
+      >
+        <Link to="/login" className="w-button button login-button"  style={{textDecoration: 'none', color: 'white'}}>
+          {"Log in"}
+]        </Link>
+        <div className="button-container" style={{marginTop: 10}}>
+          {navBarContent}
+        </div>
+      </AppBar>
     );
   }
 });
+
 
 export default NavBar;

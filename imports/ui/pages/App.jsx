@@ -27,7 +27,7 @@ class App extends Component {
 
 //material-ui context for getting the theme
 App.childContextTypes = {
-  muiTheme: PropTypes.object.isRequired
+  muiTheme: PropTypes.object.isRequired,
 };
 
 export default App;

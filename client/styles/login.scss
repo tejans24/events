@@ -1,0 +1,29 @@
+.section--login {
+  background-color: blue;
+  padding: 20px;
+  .login-errors {
+    margin: 20px 0 20px 0;
+    font-color: red;
+    color: red;
+    width: 100%;
+  }
+  .login-remember-me {
+    text-align: none;
+  }
+  .login__submit {
+    margin: 20px;
+  }
+  .login-title {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  .login-email .login-remember-me .login-password{
+    width: 100% !important
+  }
+  .login-remember-me {
+    text-align: left !important
+  }
+  .login--submit {
+    width: 100%;
+  }
+}
