@@ -3,6 +3,8 @@ import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { browserHistory } from 'react-router';
 
+import { Link } from 'react-router'
+
 import { Meteor } from 'meteor/meteor';
 
 //material-ui components
@@ -77,6 +79,9 @@ var Login = React.createClass({
             </div>
           </form>
           <a href="" className="login-forgot-password">Forgot password</a>
+          <Link to="/signup" className="w-button button signup-already-signedup">
+            {'Not signed up yet?'}
+          </Link>
         </div>
       </div>
     );
